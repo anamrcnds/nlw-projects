@@ -1,25 +1,39 @@
-//Componentes / Propriedades
+import './styles/main.css';
+import logoImg from './assets/logo-nlw-esports.svg'
 
 interface ButtonProps {
   title: string;
 }
 
-function Button(props: ButtonProps) {
-  return (
-    <button>
-      {props.title}
-    </button>
-  )
-}
-
 function App() {
   return (
-    <> 
-      <Button title='Send1' /> 
-      <Button title='Send2'/> 
-      <Button title='Send3'/> 
-    </>
+    <div className='max-w-[1344] flex flex-col items-center my-20'>
+      <img src={logoImg} alt="" />
+      <h1 className="text-6xl text-white font-black mt-20">
+        Seu <span className='bg-nlw-gradient bg-clip-text text-transparent'>duo</span> está aqui.
+      </h1>
+      <div className='grid grid-cols-6 gap-6 mt-16'>
+        <a href="">
+          <img src="/game-1.png" alt="" />
+        </a>
+        <a href="">
+          <img src="/game-2.png" alt="" />
+        </a>
+        <a href="">
+          <img src="/game-3.png" alt="" />
+        </a>
+        <a href="">
+          <img src="/game-4.png" alt="" />
+        </a>
+        <a href="">
+          <img src="/game-5.png" alt="" />
+        </a>
+        <a href="">
+          <img src="/game-6.png" alt="" />
+        </a>
+      </div>
+    </div>
   )
 }
 
-export default App
+export default App;
