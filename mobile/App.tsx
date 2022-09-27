@@ -1,5 +1,3 @@
-
-
 import { StatusBar } from 'react-native';
 import {
   useFonts,
