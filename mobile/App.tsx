@@ -29,7 +29,6 @@ const [fontsLoaded] = useFonts({
         translucent
       />
       
-
       {fontsLoaded ? <Home /> : <Loading />}
     </Background>
   );
